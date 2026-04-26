@@ -10,7 +10,7 @@ import os
 import dotenv
 from app.core.settings import settings
 from app.agents.analyst.config import AnalystConfig
-from app.agents.analyst.prompts import analyst_propmt
+from app.agents.analyst.prompts import analyst_prompt
 
 
 model = ChatOpenAI(
@@ -22,7 +22,7 @@ model = ChatOpenAI(
 
 analyst_agent = ChatOpenAI(
     model= "openai:gpt-5.4",
-    system_prompt=system_prompt,
+    system_prompt=,
     tools=[get_weather]
 )
 
