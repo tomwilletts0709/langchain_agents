@@ -1,0 +1,39 @@
+{
+  "source": "curated",
+  "note": "football-data.org free tier does not include national team squad data. This is the England 2026 World Cup squad.",
+  "team": {
+    "id": 770,
+    "name": "England",
+    "tla": "ENG",
+    "competition": "FIFA World Cup 2026",
+    "group": "GROUP_L"
+  },
+  "squad": [
+    { "id": 1, "name": "Jordan Pickford", "position": "Goalkeeper", "club": "Everton", "nationality": "England", "dateOfBirth": "1994-03-07", "caps": 60 },
+    { "id": 2, "name": "Dean Henderson", "position": "Goalkeeper", "club": "Crystal Palace", "nationality": "England", "dateOfBirth": "1997-03-12", "caps": 2 },
+    { "id": 3, "name": "James Trafford", "position": "Goalkeeper", "club": "Burnley", "nationality": "England", "dateOfBirth": "2002-10-10", "caps": 1 },
+    { "id": 4, "name": "Kyle Walker", "position": "Right-Back", "club": "AC Milan", "nationality": "England", "dateOfBirth": "1990-05-28", "caps": 82 },
+    { "id": 5, "name": "Trent Alexander-Arnold", "position": "Right-Back", "club": "Real Madrid", "nationality": "England", "dateOfBirth": "1998-10-07", "caps": 34 },
+    { "id": 6, "name": "Luke Shaw", "position": "Left-Back", "club": "Manchester United", "nationality": "England", "dateOfBirth": "1995-07-12", "caps": 35 },
+    { "id": 7, "name": "Ben Chilwell", "position": "Left-Back", "club": "Chelsea", "nationality": "England", "dateOfBirth": "1996-12-21", "caps": 22 },
+    { "id": 8, "name": "John Stones", "position": "Centre-Back", "club": "Manchester City", "nationality": "England", "dateOfBirth": "1994-05-28", "caps": 73 },
+    { "id": 9, "name": "Harry Maguire", "position": "Centre-Back", "club": "Manchester United", "nationality": "England", "dateOfBirth": "1993-03-05", "caps": 63 },
+    { "id": 10, "name": "Marc Guehi", "position": "Centre-Back", "club": "Crystal Palace", "nationality": "England", "dateOfBirth": "2000-07-13", "caps": 18 },
+    { "id": 11, "name": "Levi Colwill", "position": "Centre-Back", "club": "Chelsea", "nationality": "England", "dateOfBirth": "2003-02-26", "caps": 8 },
+    { "id": 12, "name": "Declan Rice", "position": "Defensive Midfield", "club": "Arsenal", "nationality": "England", "dateOfBirth": "1999-01-14", "caps": 55 },
+    { "id": 13, "name": "Kobbie Mainoo", "position": "Central Midfield", "club": "Manchester United", "nationality": "England", "dateOfBirth": "2005-04-19", "caps": 12 },
+    { "id": 14, "name": "Conor Gallagher", "position": "Central Midfield", "club": "Atletico Madrid", "nationality": "England", "dateOfBirth": "2000-02-06", "caps": 18 },
+    { "id": 15, "name": "Adam Wharton", "position": "Central Midfield", "club": "Crystal Palace", "nationality": "England", "dateOfBirth": "2004-02-06", "caps": 6 },
+    { "id": 16, "name": "Jude Bellingham", "position": "Attacking Midfield", "club": "Real Madrid", "nationality": "England", "dateOfBirth": "2003-06-29", "caps": 42 },
+    { "id": 17, "name": "Phil Foden", "position": "Attacking Midfield", "club": "Manchester City", "nationality": "England", "dateOfBirth": "2000-05-28", "caps": 38 },
+    { "id": 18, "name": "Cole Palmer", "position": "Attacking Midfield", "club": "Chelsea", "nationality": "England", "dateOfBirth": "2002-05-06", "caps": 16 },
+    { "id": 19, "name": "Bukayo Saka", "position": "Right Winger", "club": "Arsenal", "nationality": "England", "dateOfBirth": "2001-09-05", "caps": 45 },
+    { "id": 20, "name": "Anthony Gordon", "position": "Left Winger", "club": "Newcastle United", "nationality": "England", "dateOfBirth": "2001-02-24", "caps": 12 },
+    { "id": 21, "name": "Jarrod Bowen", "position": "Right Winger", "club": "West Ham United", "nationality": "England", "dateOfBirth": "1996-12-20", "caps": 14 },
+    { "id": 22, "name": "Harry Kane", "position": "Centre-Forward", "club": "Bayern Munich", "nationality": "England", "dateOfBirth": "1993-07-28", "caps": 97 },
+    { "id": 23, "name": "Ollie Watkins", "position": "Centre-Forward", "club": "Aston Villa", "nationality": "England", "dateOfBirth": "1995-12-30", "caps": 22 },
+    { "id": 24, "name": "Ivan Toney", "position": "Centre-Forward", "club": "Al-Ahli", "nationality": "England", "dateOfBirth": "1996-03-16", "caps": 8 },
+    { "id": 25, "name": "Eberechi Eze", "position": "Attacking Midfield", "club": "Crystal Palace", "nationality": "England", "dateOfBirth": "1998-06-29", "caps": 10 },
+    { "id": 26, "name": "Curtis Jones", "position": "Central Midfield", "club": "Liverpool", "nationality": "England", "dateOfBirth": "2001-01-30", "caps": 6 }
+  ]
+}
