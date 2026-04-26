@@ -36,6 +36,15 @@ class AgentOutput(BaseModel):
     id: int
     topic: list[str]    
     output: str
+    player: Optional[str]
+    team: Optional[str]
+    match: Optional[str]
+    fixture_id: Optional[int]
+    session_id: Optional[int]
+    tactical_insights: Optional[str]
+    head_to_head_stats: Optional[str]
+    next_opposition_analysis: Optional[str]
+    tactics_formation: Optional[str, int] = None
     analysis_type: AnalysisType
     status: AnalysisStatus
     Confidence: Optional[float] = None
