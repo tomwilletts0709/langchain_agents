@@ -32,6 +32,15 @@ def get_player_stats(player_name: str) -> dict:
         "overall_performance": "Excellent"
     }
 
+@tool("generate_report", return_direct=True)
+def generate_report(player_name: str, stats: dict) -> str:
+    """generate a detailed report based on the player's statistics, highlighting key performance indicators and trends."""
+    report = f"Report for {player_name}:\n"
+    report += f"Goals Scored: {stats['goals_scored']}\n"
+    report += f"Assists: {stats['assists']}\n"
+    report += f"Overall Performance: {stats['overall_performance']}\n"
+    return report
+
 tavily_search_tool = TavilySearch(
     max_results=5,
     topic="Football Analysis"
