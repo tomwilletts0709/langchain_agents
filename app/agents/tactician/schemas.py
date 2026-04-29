@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import Optional, Annotated, Any, List, TypedDict
 from datetime import datetime
-from enum import Enim
+from enum import Enum
 
 
 class AnalysisType(str, Enum): 

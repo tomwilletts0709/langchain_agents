@@ -10,8 +10,8 @@ class AnalystRepository:
         if analysis.id is not None:
             raise ValueError("Cannot create an Analysis that already has an ID")
         self.db.add(analysis)
-        self.db.commit()
         self.db.flush()
+        self.db.commit()
         self.db.refresh(analysis)
         return analysis
 
@@ -19,8 +19,8 @@ class AnalystRepository:
         if analysis.id is None:
             raise ValueError("Cannot update an Analysis that has not been saved")
         self.db.add(analysis)
-        self.db.commit()
         self.db.flush()
+        self.db.commit()
         self.db.refresh(analysis)
         return analysis
 

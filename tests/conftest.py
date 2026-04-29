@@ -1,5 +1,7 @@
+import os
 import pytest 
 from datetime import datetime
+
 
 
 @pytest.fixture
@@ -13,3 +15,8 @@ def test_read_db():
             self.data["users"].append(user)
     
     return TestDB()
+
+@pytest.fixture(autouse=True)
+def check_api_keys():
+    if not os.environ.get("OPENAI_API_KEY"):
+        pytest.skip("OPENAI_API_KEY not set")
