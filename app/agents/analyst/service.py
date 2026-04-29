@@ -17,10 +17,6 @@ from app.agents.analyst.exceptions import (
 )
 from app.core.logging import logger
 
-logger.info()
-
-
-
 class AnalystService: 
     def __init__(self, analysis_status=AnalysisStatus, agent=analyst_agent, config=AnalystConfig(), tools=[get_user_memory, save_user_memory, get_player_stats, generate_report, tavily_search_tool]):
         self.agent = agent
