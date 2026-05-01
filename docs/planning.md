@@ -29,7 +29,7 @@ following fastapi based on Netflix's Dispatch:
 
 app/
 ├── agents/
-│   ├── scout/
+│   ├── analyst/
 │   │   ├── router.py        # POST /scout/lineup-advice
 │   │   ├── schemas.py       # LineupRequest, LineupResponse
 │   │   ├── service.py       # orchestrates the agent run
@@ -38,15 +38,8 @@ app/
 │   │   ├── prompts.py       # system prompts
 │   │   ├── constants.py
 │   │   └── exceptions.py
-│   ├── analyst/
-│   │   ├── router.py        # POST /analyst/stats
-│   │   ├── schemas.py
-│   │   ├── service.py
-│   │   ├── agent.py
-│   │   ├── tools.py
-│   │   ├── prompts.py
-│   │   └── constants.py
-
+│   │
+│   │ 
 │   ├── transfers/
 │   │   └── ...
 │   └── lineup/

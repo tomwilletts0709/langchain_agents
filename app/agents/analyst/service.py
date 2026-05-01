@@ -9,6 +9,7 @@ from app.agents.analyst.tools import (
     generate_report,
     tavily_search_tool
 )
+from app.agents.analyst.repository import AnalystRepository
 from app.agents.analyst.prompts import analyst_prompt
 from app.agents.analyst.models import AnalysisType, AnalysisStatus
 from app.agents.analyst.prompts import analyst_prompt
@@ -18,11 +19,12 @@ from app.agents.analyst.exceptions import (
 from app.core.logging import logger
 
 class AnalystService: 
-    def __init__(self, analysis_status=AnalysisStatus, agent=analyst_agent, config=AnalystConfig(), tools=[get_user_memory, save_user_memory, get_player_stats, generate_report, tavily_search_tool]):
+    def __init__(self, repository=AnalystRepository, analysis_status=AnalysisStatus, agent=analyst_agent, config=AnalystConfig(), tools=[get_user_memory, save_user_memory, get_player_stats, generate_report, tavily_search_tool]):
         self.agent = agent
         self.config = config
         self.tools = tools
         self.analysis_status = analysis_status
+        self.repository = repository
 
     async def analyse_player(self, player_name: str, user_id: str) -> str:
         """ This method will be called to analyse an individual player
@@ -66,6 +68,17 @@ class AnalystService:
             input
         )
 
+    async def scout_opposition(self, team_name: str, player_name: str, user_id: str) -> Analysis: 
+        report = Scout_Report(
+            team_name=team_name,
+            player_name=player_name,
+            status=AnalysisStatus.PENDING
+        )
+        report = self.repository.create(report)
+        if report is None:
+            raise ValueError
+        
+        
 
 #need to add ability to 
     

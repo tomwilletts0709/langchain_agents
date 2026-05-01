@@ -1,5 +1,5 @@
 from typing import Dict, Any
-from fastapi import FastAPI, HTTPException, status, Request
+from fastapi import FastAPI, HTTPException, status, Request, Router
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.settings import settings
 from app.core.limiter import limiter 
@@ -9,6 +9,7 @@ from contextlib import asynccontextmanager
 from datetime import datetime, timedelta
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
+from app.agents.analyst import analyst_agent
 
 import uvicorn
 

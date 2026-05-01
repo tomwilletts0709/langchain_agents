@@ -1,11 +1,8 @@
-from typing
+from typing import Any
 from langchain.tools import tool, ToolRuntime
 from langgraph.store.memory import InMemoryStore
-from app.agents.analyst.models import 
 from pydantic import BaseModel, Field
 from langchain_tavily import TavilySearch
-
-class 
 
 
 @tool("access_user_memory", return_direct=True)
@@ -45,3 +42,10 @@ tavily_search_tool = TavilySearch(
     max_results=5,
     topic="Football Analysis"
 )
+
+@tool("scout opposition", return_direct=True)
+def scout_opposition(player_name: str, team_name: str, stats: dict) -> dict[str, Any]:
+    scout_opposition_report = f"Report for {team_name}"
+    scout_opposition_report +=
+
+    return scout_opposition_report
