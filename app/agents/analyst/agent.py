@@ -58,5 +58,23 @@ analyst_agent = create_agent(
 
 )
 
+async def run_team_analysis(team_name: str, user_id: str) -> str:
+    result = await analyst_agent.ainvoke({
+        "messages": [
+            {
+                "role": "user",
+                "content": (
+                    f"Analyse the football team {team_name}. "
+                    f"Use current form, statistics, key players, tactical strengths, "
+                    f"weaknesses, and give a useful report. "
+                    f"The user id is {user_id}, so use or save memory if helpful."
+                ),
+            }
+        ]
+    })
+
+    return result["messages"][-1].content
+
+
 
 
